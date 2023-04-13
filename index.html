@@ -49,7 +49,10 @@
       <section class="background-dark section background-heading-pirmary">
         <div class="container">
           <h1 class="heading-pirmary">Efektywne rozwiązania dla waszego biznesu</h1>
-          <button class="order-service" type="button">Zamów usługe</button>
+          <button data-modal-open class="order-service" type="button">Zamów usługe</button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <button data-modal-close class="button-modal-close">x</button>
         </div>
       </section>
       <section class="section section-lorem">
@@ -111,18 +114,27 @@
           <h2 class="content-headers">Czym się zajmujemy</h2>
           <ul class="what-we-do-list">
             <li>
-              <img src="images/img1-1.jpg" width="370" height="294" alt="programming" />
+              <figure class="img-with-title">
+                <img src="images/img1-1.jpg" width="370" height="294" alt="programming" />
+                <figcaption class="img-title">Aplikacje komputerowee</figcaption>
+              </figure>
             </li>
             <li>
-              <img
-                src="images//img1-2.jpg"
-                width="370"
-                height="294"
-                alt="creating mobile applications"
-              />
+              <figure class="img-with-title">
+                <img
+                  src="images//img1-2.jpg"
+                  width="370"
+                  height="294"
+                  alt="creating mobile applications"
+                />
+                <figcaption class="img-title">Aplikacje mobilne</figcaption>
+              </figure>
             </li>
             <li>
-              <img src="images/img1-3.jpg" width="370" height="294" alt="design" />
+              <figure class="img-with-title">
+                <img src="images/img1-3.jpg" width="370" height="294" alt="design" />
+                <figcaption class="img-title">Rozwiązania graficzne</figcaption>
+              </figure>
             </li>
           </ul>
         </div>
@@ -347,5 +359,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
