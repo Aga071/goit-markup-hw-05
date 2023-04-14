@@ -20,7 +20,7 @@
         <nav class="link-navigation">
           <a class="logo" href="index.html">Web<span class="logo-span-dark">Studio</span></a>
           <ul class="link-navigation navigation-list">
-            <li><a class="navigation" href="index.html">Agencja</a></li>
+            <li class="is-activ"><a class="navigation" href="index.html">Agencja</a></li>
             <li><a class="navigation" href="portfolio.html">Portfolio</a></li>
             <li><a class="navigation" href="">Kontakt</a></li>
           </ul>
@@ -51,9 +51,6 @@
           <h1 class="heading-pirmary">Efektywne rozwiązania dla waszego biznesu</h1>
           <button data-modal-open class="order-service" type="button">Zamów usługe</button>
         </div>
-        <div class="modal is-hidden" data-modal>
-          <button data-modal-close class="button-modal-close">x</button>
-        </div>
       </section>
       <section class="section section-lorem">
         <div class="container container-text-start">
@@ -61,7 +58,7 @@
             <li>
               <div class="icon-lorem">
                 <svg width="65" height="70">
-                  <use href="images/icons.svg#icon-antenna-1"></use>
+                  <use href="/images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
               <h4 class="heading-lorem-ipsum">Lorem ipsum</h4>
@@ -359,6 +356,15 @@
         </div>
       </div>
     </footer>
-    <script src="../js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="button-modal-close">
+          <svg width="11" height="11">
+            <use href="images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
