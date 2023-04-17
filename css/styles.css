@@ -17,9 +17,11 @@
 * {
   margin: 0;
 }
-ul,
-li {
+ul {
   list-style: none;
+  padding: 0;
+}
+li {
   padding-left: 0;
 }
 a {
@@ -57,7 +59,7 @@ body {
 }
 .background-heading-pirmary {
   padding: 200px 0;
-  background-image: url(../images/Img4-1.jpg);
+  background-image: url(../images/img4-1.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: rgba(47, 48, 58, 0.4);
@@ -381,15 +383,14 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal {
   position: absolute;
   width: 528px;
   height: 581px;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   margin: auto;
   background-color: var(--background-color-primary-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
